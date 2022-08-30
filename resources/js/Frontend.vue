@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBarVue></NavBarVue>
-    <cardVue></cardVue>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import NavBarVue from "./Frontend/components/NavBar.vue";
 import CardVue from "./Frontend/components/Card.vue";
 
 export default {
-  components: { NavBarVue, CardVue },
+  components: { NavBarVue },
   data() {
     return {
       message: "Ciao ",

@@ -13,7 +13,7 @@
             <p class="card-text">
               {{ post.content }}
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <router-link :to="{ name: 'posts.show', params: { id: post.id } }" class="btn btn-primary">Visualizza Post</router-link>
           </div>
         </div>
       </div>

@@ -19,7 +19,17 @@
         <ul class="navbar-nav mr-auto"></ul>
 
         <!-- Right Side Of Navbar -->
-        <ul class="navbar-nav ml-auto"></ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'home' }"> Home </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'contacts' }"> Contatti </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'posts.show' }"> Post </router-link>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
