@@ -2052,9 +2052,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log(this.$route);
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/posts" + this.$route.params.id).then(function (resp) {
-      _this.post = resp.data;
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/posts/").then(function (resp) {
+      _this.post = resp.data[_this.$route.params.id];
+      console.log(_this.post);
     });
   }
 });
@@ -2435,18 +2435,13 @@ var render = function render() {
       _c = _vm._self._c;
 
   return _c("div", [_c("div", {
-    attrs: {
-      "py-5": ""
-    }
+    staticClass: "py-5"
   }, [_c("div", {
     staticClass: "row justify-content-center"
   }, [_c("div", {
     staticClass: "col-8"
   }, [_c("div", {
-    staticClass: "card mb-3",
-    staticStyle: {
-      width: "18rem"
-    }
+    staticClass: "card mb-3"
   }, [_c("img", {
     staticClass: "card-img-top",
     attrs: {

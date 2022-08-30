@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div py-5>
+    <div class="py-5">
     <div class="row justify-content-center">
       <div class="col-8">
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3">
           <img
             :src="'/storage/' + post.imgUrl"
             class="card-img-top"
@@ -37,10 +37,10 @@ export default {
     },
 
     mounted() {
-      console.log(this.$route)
-      axios.get("/api/posts" + this.$route.params.id)
+      axios.get("/api/posts/")
       .then((resp) => {
-        this.post = resp.data;
+        this.post = resp.data[this.$route.params.id];
+        console.log(this.post)
       })
     }
     
