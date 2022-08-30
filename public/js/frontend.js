@@ -14716,7 +14716,7 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Luca\boolean\laravel-cli\resources\js\frontend.js */"./resources/js/frontend.js");
+module.exports = __webpack_require__(/*! C:\Users\Luca\boolean\laravel-boolpress\resources\js\frontend.js */"./resources/js/frontend.js");
 
 
 /***/ })
